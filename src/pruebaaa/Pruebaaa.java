@@ -31,27 +31,49 @@ public class Pruebaaa {
 
         }//este esxperimentito lo hice yo, para saber la posicion siempre va adentro del bucle
 
-        for (j = 0; j < numElems; j++) {
-            System.out.println(arr[j]);
+        for (j = 0; j < numElems; j++) { //recorremos todo el arreglo
+            System.out.print(arr[j] + " ");
 
         }
 
         System.out.println("");
-        buscarItem = 70;//este es el elemento que buscaremos en el array
+        buscarItem = 20;               //este es el elemento que buscaremos en el array
         for (j = 0; j < numElems; j++) {
 
             if (arr[j] == buscarItem) {
-                break;
-            
 
+                break;
+
+            }
         }
         if (j == numElems) {
             System.out.println("no se encontro el elemento buscado");
         } else {
             System.out.println("Se encontro el elemento buscado: " + buscarItem);
         }
-        
-    }
+        System.out.println("");
+
+        /*ahoraborraremos un elemento del arreglo sobreescribiendo los elementos superiores
+    a la posicion donde estaba el elemento a borrar*/
+        buscarItem = 10;
+        for (j = 0; j < numElems; j++) { //recorremos el array pa encontrar el indice del elemto a borrar
+
+            if (arr[j] == buscarItem) {
+                break;                  //cuando lo encuentre que se rompa el ciclo
+            }
+
+        }
+        for (int k = j; k < numElems; k++) {
+            arr[k] = arr[k + 1];     //a "k", le asignare,os el indice del siguiente elemento(estaremos reescribiendo)
+        }
+        numElems--; //como sobro una casila en el array, se decrementa en uno para ajustar el tamaño
+
+        for (j = 0; j < numElems; j++) {
+            System.out.print(arr[j] + " "); //mostraremos de nuevo el arreglo despues de haber echo los cambios convenientes
+
+        }
+        System.out.println("");
+        System.out.println("se elimino el numero 10 y se recorrieon los demas");
 
     }
 
