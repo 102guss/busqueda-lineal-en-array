@@ -77,7 +77,7 @@ public class arregloOrdenado {
     
     
         for (int j = 0; j < numElems; j++) {
-            System.out.println(arr[j] + " ");
+            System.out.print(arr[j] + " ");
         }
         
         System.out.println("");
