@@ -15,7 +15,12 @@ public class PilaAPP {
         
         System.out.println("");
         System.out.println("");
-        System.out.println("ELEMENTO EN LA CIMA DE LA PILA");
+        System.out.println("ELEMENTO EN LA CIMA DE LA PILA: " + pila.cimaPila());
+        
+        System.out.println("");
+        System.out.println("");
+        
+       
         
         
         
