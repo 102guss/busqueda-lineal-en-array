@@ -21,5 +21,41 @@ public class Pila {
     cima += 1;                                         //incrementa el valor de la cima en 1                 
     arregloPila[cima]= elemento;                       //inserta elemento en la cima de la pila   
     }
-   //.................................................................................................................................  
+   //.................................................................................................................................
+   //metodo que verifica si la pila esta vacia(no tienen elementos)
+    public boolean pilaVacia(){
+    
+    return cima == -1;
+    }
+    
+   //..................................................................................................................................
+  //metodo qeu¡¡ue verifica si la pila esta llena(comprueba sila cima es tamanoPila-1 )
+   public boolean pilaLLena(){
+   
+   return cima ==tamanoPila-1;
+   } 
+  //....................................................................................................................................
+  //metodo que ddevuelce el numero actual de delementos den la pila
+   public int tamano(){
+   
+   return cima +1;
+   }
+  //.....................................................................................................................................
+ //metodo que imprime todos los elementos de la pila
+   public void MoatrarElementosPila(){
+   
+       for (int i = 0; i < tamano(); i++) {
+           System.out.print(arregloPila[i]);
+           System.out.print("");
+       }
+       
+   }
+        
+        
+        
+        
+    
+    
+    
+    
 }
