@@ -30,11 +30,11 @@ public class Pila {
     return temp;                                      //retorna ele elemento eliminado
     }
  //,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..............................................................................................
-    
-    
-
-
-
+//metodo que devuelve ele emelemeto que se enecunentra en la cima de la pila
+   public Object cimaPila(){
+   return arregloPila[cima];
+   } 
+  //....................................................................................................................................  
 
 
 //metodo que verifica si la pila esta vacia(no tienen elementos)
