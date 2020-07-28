@@ -16,13 +16,28 @@ public class Pila {
     }
 
     //-------------------------------------------------------------------------------------------------------------------------.....
+    //metodo que inserta una lemeto en la cima de la pila
     public void insertar(Object elemento){
     
     cima += 1;                                         //incrementa el valor de la cima en 1                 
     arregloPila[cima]= elemento;                       //inserta elemento en la cima de la pila   
     }
    //.................................................................................................................................
-   //metodo que verifica si la pila esta vacia(no tienen elementos)
+   //metodo que retira ele elemento que se encuentra en la cima de la pila y retorna este elemento eliminado
+    public Object quitar(){
+    Object temp = arregloPila[cima];                  //guardamos en variable temp el elemento de la cima de la pila
+    cima -=1;                                         //decrementamos el vaor de cima en 1     
+    return temp;                                      //retorna ele elemento eliminado
+    }
+ //,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..............................................................................................
+    
+    
+
+
+
+
+
+//metodo que verifica si la pila esta vacia(no tienen elementos)
     public boolean pilaVacia(){
     
     return cima == -1;
@@ -46,7 +61,7 @@ public class Pila {
    
        for (int i = 0; i < tamano(); i++) {
            System.out.print(arregloPila[i]);
-           System.out.print("");
+           System.out.print(" ");
        }
        
    }
