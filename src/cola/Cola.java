@@ -33,4 +33,19 @@ public class Cola {
 
     }//estamos asumiendo que el arreglo  nunca esta lleno pero podemos hacer exepciones pero lo primero seria comprobar si la pila esta vacia
  //.........................................................................................................................................
+//retira el elemento que se encuentra en el frente de la cola
+public Object quitar(){
+    
+Object temp = colaArr[frente];                      //optiene el elemento del frente de la cola y lo asigna a una variable temporal
+frente += -1;                                       //se mueve frente a una posicion para que apunten al siguiente indice de la cola
+    if (frente == tamanoMax) {
+        frente = 0;                                //hace que la cola sea circular
+    }
+    numElems --;                                   //se reduce en uno el numero de elementos en la cola
+    return temp;                                   //retornamos el elemento de la cabeza de la cola
 }
+
+    
+}
+
+
