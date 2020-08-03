@@ -1,4 +1,4 @@
-package pruebaaa;
+package arreglo;
 
 public class Arreglo_1 {
 
