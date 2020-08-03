@@ -37,15 +37,42 @@ public class Cola {
 public Object quitar(){
     
 Object temp = colaArr[frente];                      //optiene el elemento del frente de la cola y lo asigna a una variable temporal
-frente += -1;                                       //se mueve frente a una posicion para que apunten al siguiente indice de la cola
+frente +=1;                                       //se mueve frente a una posicion para que apunten al siguiente indice de la cola
     if (frente == tamanoMax) {
         frente = 0;                                //hace que la cola sea circular
     }
     numElems --;                                   //se reduce en uno el numero de elementos en la cola
-    return temp;                                   //retornamos el elemento de la cabeza de la cola
+    return temp;                                   //retornamos el elemento de la cabeza de la cola                                                 
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------
+	// devuelve el elemento que se encuentra al frente o primero en la cola
+	public Object frenteCola() {
+		return colaArr[frente];								// retorna elemento que esta en la cabeza de la cola
+	}
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	// devuelve true si la cola esta vacia (no tiene elementos)
+	public boolean colaVacia() {
+		return (numElems==0);								// retorna valor booleano dependiendo si la cola esta o no vacia
+	}
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	// devuelve true si la cola esta llena
+	public boolean colaLLena() {
+		return (numElems==tamanoMax);						// compara los valores del numero de elementos del arreglo con el tamaño del arreglo
+	}
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	// devuelve el numero de elementos que tiene la cola
+	public int tamanoCola() {
+		return numElems;									// retorna valor de la variable numElems
+	}
+	//-------------------------------------------------------------------------------------------------------------------------------------------	
+}
+   
 
-    
-}
+
+
+
+
+
+
 
 
