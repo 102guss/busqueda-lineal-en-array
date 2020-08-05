@@ -5,8 +5,8 @@ public class Pruebaaa {
     //algoritmo de busqueda lineal en java
     public static void main(String[] args) {
 
-        int[] arr;
-        arr = new int[20];
+        int[] arr;               //se declara el tipo y nombre del arreglo
+        arr = new int[20];       //se inicializa el arreglo a partir del nombre
         int numElems;
         int j;
         int buscarItem;
@@ -37,7 +37,7 @@ public class Pruebaaa {
         }
 
         System.out.println("");
-        buscarItem = 20;               //este es el elemento que buscaremos en el array
+        buscarItem = 120;               //este es el elemento que buscaremos en el array
         for (j = 0; j < numElems; j++) {
 
             if (arr[j] == buscarItem) {
@@ -74,6 +74,9 @@ public class Pruebaaa {
         }
         System.out.println("");
         System.out.println("se elimino el numero 10 y se recorrieon los demas");
+        
+        /*en conclusion nada mas agregamoos el metodo buscar y y eliminar en un arreglo lineal
+        / aplicado en el metodo main*/
 
     }
 
