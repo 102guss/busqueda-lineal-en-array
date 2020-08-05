@@ -8,7 +8,7 @@ public class Arreglo_1 {
     //constructor
     public Arreglo_1(int tam) {
         arr = new int[tam];
-        numElements = 0;
+        numElements = 0;     //se inicializa numero de elementos en "cero"
     }
 
     //---------------------------------------------------------------------
@@ -23,8 +23,8 @@ public class Arreglo_1 {
             }
         }
 
-        if (j == numElements) {
-            return false;
+        if (j == numElements) { //quiere decir que se recoorio todos los elementos del array  
+            return false;  //y retorna false porque no encontro el dato
         } else {
             return true;
         }
@@ -36,8 +36,8 @@ public class Arreglo_1 {
 
     public void insertar(int dato) { //se recibe un parametro
 
-        arr[numElements] = dato;
-        numElements++;
+        arr[numElements] = dato;  //se inserta al final de todos los elementos del arreglo lineal
+        numElements++;   //se incrementa el numero de elemento en uno
 
     }
 
@@ -76,7 +76,7 @@ public class Arreglo_1 {
 
     }
     
-    //metodo que muestra el valor elemento en la posicion "i" del arreglo
+    //metodo que muestra el valor del elemento en la posicion "i" del arreglo
     
     public int mostrar(int i){
         return arr[i];
